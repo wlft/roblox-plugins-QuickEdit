@@ -1,0 +1,222 @@
+{
+    "ClassName": "Frame",
+    "Properties": {
+        "BackgroundColor3": [0.039215, 0.039215, 0.054901],
+        "BorderColor3": [0, 0, 0],
+        "BorderSizePixel": 0,
+        "Position": {"UDim2": [[0.480865, 0], [0.230567, 0]]},
+        "Size": {"UDim2": [[0, 300], [0, 400]]}
+    },
+    "Children": [
+        {
+            "Name": "edit",
+            "ClassName": "Frame",
+            "Properties": {
+                "BackgroundColor3": [1, 1, 1],
+                "BackgroundTransparency": 1,
+                "BorderColor3": [0, 0, 0],
+                "BorderSizePixel": 0,
+                "Size": {"UDim2": [[1, 0], [0, 300]]}
+            },
+            "Children": [
+                {
+                    "Name": "input",
+                    "ClassName": "Frame",
+                    "Properties": {
+                        "BackgroundColor3": [1, 1, 1],
+                        "BackgroundTransparency": 1,
+                        "Size": {"UDim2": [[1, 0], [1, 0]]}
+                    },
+                    "Children": [
+                        {
+                            "Name": "m",
+                            "ClassName": "TextBox",
+                            "Properties": {
+                                "BackgroundColor3": [1, 1, 1],
+                                "BackgroundTransparency": 1,
+                                "BorderColor3": [0, 0, 0],
+                                "BorderSizePixel": 0,
+                                "FontFace": {
+                                    "family": "rbxasset://fonts/families/GothamSSm.json",
+                                    "weight": "Medium",
+                                    "style": "Normal"
+                                },
+                                "PlaceholderText": "...",
+                                "Size": {"UDim2": [[1, 0], [1, 0]]},
+                                "Text": "",
+                                "TextColor3": [1, 1, 1],
+                                "TextSize": 18
+                            }
+                        },
+                        {
+                            "Name": "UICorner",
+                            "ClassName": "UICorner",
+                            "Properties": {
+                            }
+                        },
+                        {
+                            "Name": "UIStroke",
+                            "ClassName": "UIStroke",
+                            "Properties": {
+                                "ApplyStrokeMode": "Border",
+                                "Color": [0.156862, 0.156862, 0.184313],
+                                "Thickness": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "confirm",
+            "ClassName": "Frame",
+            "Properties": {
+                "AnchorPoint": [1, 1],
+                "BackgroundColor3": [0.164705, 0.392156, 0.964705],
+                "LayoutOrder": 2,
+                "Position": {"UDim2": [[1, 0], [1, 0]]},
+                "Size": {"UDim2": [[0, 90], [0, 40]]}
+            },
+            "Children": [
+                {
+                    "Name": "label",
+                    "ClassName": "TextLabel",
+                    "Properties": {
+                        "AnchorPoint": [0, 0.5],
+                        "BackgroundColor3": [1, 1, 1],
+                        "BackgroundTransparency": 1,
+                        "BorderColor3": [0, 0, 0],
+                        "BorderSizePixel": 0,
+                        "FontFace": {
+                            "family": "rbxasset://fonts/families/GothamSSm.json",
+                            "weight": "Bold",
+                            "style": "Normal"
+                        },
+                        "LayoutOrder": 1,
+                        "Position": {"UDim2": [[0, 32], [0.5, 0]]},
+                        "Size": {"UDim2": [[0, 30], [0.800000, 0]]},
+                        "Text": "OK",
+                        "TextColor3": [1, 1, 1],
+                        "TextSize": 22,
+                        "TextTruncate": "SplitWord",
+                        "TextXAlignment": "Left"
+                    }
+                },
+                {
+                    "Name": "icon",
+                    "ClassName": "Frame",
+                    "Properties": {
+                        "AnchorPoint": [0, 0.5],
+                        "BackgroundColor3": [1, 1, 1],
+                        "BackgroundTransparency": 1,
+                        "BorderColor3": [0, 0, 0],
+                        "BorderSizePixel": 0,
+                        "Position": {"UDim2": [[0, 0], [0.5, 0]]},
+                        "Size": {"UDim2": [[0, 28], [1, 0]]}
+                    },
+                    "Children": [
+                        {
+                            "Name": "img",
+                            "ClassName": "ImageLabel",
+                            "Properties": {
+                                "AnchorPoint": [0.5, 0.5],
+                                "BackgroundColor3": [1, 1, 1],
+                                "BackgroundTransparency": 1,
+                                "BorderColor3": [0, 0, 0],
+                                "BorderSizePixel": 0,
+                                "Image": "rbxassetid://3926305904",
+                                "ImageRectOffset": [312, 4],
+                                "ImageRectSize": [24, 24],
+                                "Position": {"UDim2": [[0.5, 0], [0.5, 0]]},
+                                "ScaleType": "Fit",
+                                "Size": {"UDim2": [[1, 0], [1, 0]]}
+                            }
+                        },
+                        {
+                            "Name": "UIAspectRatioConstraint",
+                            "ClassName": "UIAspectRatioConstraint",
+                            "Properties": {
+                                "DominantAxis": "Height"
+                            }
+                        },
+                        {
+                            "Name": "__quantum_spinner",
+                            "ClassName": "ImageLabel",
+                            "Properties": {
+                                "AnchorPoint": [0.5, 0.5],
+                                "BackgroundColor3": [1, 1, 1],
+                                "BackgroundTransparency": 1,
+                                "BorderColor3": [0, 0, 0],
+                                "BorderSizePixel": 0,
+                                "Image": "http://www.roblox.com/asset/?id=17298900001",
+                                "ImageColor3": [0, 0, 0],
+                                "Position": {"UDim2": [[0.5, 0], [0.5, 0]]},
+                                "ScaleType": "Fit",
+                                "Size": {"UDim2": [[1, 0], [1, 0]]}
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Name": "UIPadding",
+                    "ClassName": "UIPadding",
+                    "Properties": {
+                        "PaddingBottom": {"UDim": [0, 6]},
+                        "PaddingLeft": {"UDim": [0, 6]},
+                        "PaddingRight": {"UDim": [0, 6]},
+                        "PaddingTop": {"UDim": [0, 6]}
+                    }
+                },
+                {
+                    "Name": "UICorner",
+                    "ClassName": "UICorner",
+                    "Properties": {
+                    }
+                },
+                {
+                    "Name": "UIListLayout",
+                    "ClassName": "UIListLayout",
+                    "Properties": {
+                        "FillDirection": "Horizontal",
+                        "HorizontalAlignment": "Center",
+                        "Padding": {"UDim": [0, 4]},
+                        "SortOrder": "LayoutOrder",
+                        "VerticalAlignment": "Center"
+                    }
+                },
+                {
+                    "Name": "c",
+                    "ClassName": "Folder",
+                    "Properties": {
+                    },
+                    "Children": [
+                        {
+                            "Name": "hitbox",
+                            "ClassName": "ImageButton",
+                            "Properties": {
+                                "AnchorPoint": [0.5, 0.5],
+                                "BackgroundColor3": [1, 1, 1],
+                                "BackgroundTransparency": 1,
+                                "BorderColor3": [0, 0, 0],
+                                "BorderSizePixel": 0,
+                                "Position": {"UDim2": [[0.5, 0], [0.5, 0]]},
+                                "Size": {"UDim2": [[1, 12], [1, 12]]},
+                                "ZIndex": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "UIPadding",
+            "ClassName": "UIPadding",
+            "Properties": {
+                "PaddingBottom": {"UDim": [0, 10]},
+                "PaddingLeft": {"UDim": [0, 10]},
+                "PaddingRight": {"UDim": [0, 10]},
+                "PaddingTop": {"UDim": [0, 10]}
+            }
+        }
+    ]
+}

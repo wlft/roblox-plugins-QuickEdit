@@ -1,0 +1,12 @@
+{
+  "name": "roblox-plugins-QuickEdit",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "QE1": {
+        "$path": "src"
+      }
+    }
+  }
+}
