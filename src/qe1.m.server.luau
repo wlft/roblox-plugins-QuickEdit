@@ -9,7 +9,7 @@ local toolbar = plugin:CreateToolbar('QuickEdit')
 toolbar:SetAttribute('__wlft', os.time())
 
 
-local qe:PluginToolbarButton = toolbar:FindFirstChild("QuickEdit") or toolbar:CreateButton("qe-select","QuickEdit a TextLabel","http://www.roblox.com/asset/?id=122628245132562", 'QuickEdit')
+local qe:PluginToolbarButton = toolbar:FindFirstChild("QuickEdit") or toolbar:CreateButton("qe-select","Select an object with a text surface to edit it","http://www.roblox.com/asset/?id=122628245132562", 'Select Text')
 
 qe.Name = "QuickEdit"
 qe:SetAttribute("version", 4)
