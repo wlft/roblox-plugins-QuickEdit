@@ -10,8 +10,8 @@ toolbar:SetAttribute('__wlft', os.time())
 local qe:PluginToolbarButton = toolbar:FindFirstChild("QuickEdit") or toolbar:CreateButton("qe-select","Select an object with a text surface to edit it","http://www.roblox.com/asset/?id=122628245132562", 'Select Text')
 
 qe.Name = "QuickEdit"
-qe:SetAttribute("version", 4)
-qe:SetAttribute("load_metadata", `\{"name":\{"full":"QuickEdit","initialism":"QE"},"version":1\,"loaded_at":{os.time()},"is_local":{tostring(plugin.Name:match('(%.rbxmx?)$') ~= nil or false)}}`)
+qe:SetAttribute("version", 0)
+qe:SetAttribute("load_metadata", `\{"name":\{"full":"QuickEdit","initialism":"QE"},"version":0\,"loaded_at":{os.time()},"is_local":{tostring(plugin.Name:match('(%.rbxmx?)$') ~= nil or false)}}`)
 toolbar:SetAttribute("pl__qe", `\{"name":\{"full":"QuickEdit","initialism":"QE"},"loading_completed":{os.time()}}`)
 qe.Parent = toolbar
 qe.ClickableWhenViewportHidden = true

@@ -1,15 +1,15 @@
 {
   "name": "roblox-plugins-QuickEdit",
-  "globIgnorePaths": ["src/qe1.m.server.luau"],
+  "globIgnorePaths": ["src/qe0.m.server.luau"],
   "tree": {
     "$className": "DataModel",
 
     "ServerScriptService": {
-      "QE1": {
+      "QE0": {
         "$path": "src",
 
-        "qe1.m": {
-          "$path": "src/qe1.m.server.luau",
+        "qe0.m": {
+          "$path": "src/qe0.m.server.luau",
 
           "$properties": {
             "RunContext": {"Enum": 3}
