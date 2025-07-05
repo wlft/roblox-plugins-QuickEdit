@@ -81,6 +81,8 @@ qe.Click:Connect(function()
 				end
 			end
 		end)
+	else
+		mouse.Icon = 'rbxasset://SystemCursors/Arrow'
 	end
 end)
 
