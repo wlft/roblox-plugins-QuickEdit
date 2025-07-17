@@ -1,4 +1,5 @@
 local rs = game:GetService('RunService')
+local chs = game:GetService("ChangeHistoryService")
 
 if rs:IsRunning() then return end
 
@@ -18,8 +19,8 @@ qe.ClickableWhenViewportHidden = true
 
 ---
 
-local widget_info = DockWidgetPluginGuiInfo.new(Enum.InitialDockState.Float, false, true, 300, 400, 300, 400 --[[1:1]])  -- standard position, enabled when Studio opens, if the widget goes back to the last position when opened again, standard horizontal size, standard vertical size, minimum horizontal size, minimum vertical size.
-local widget = plugin:CreateDockWidgetPluginGui("QE1", widget_info)
+local widget_info = DockWidgetPluginGuiInfo.new(Enum.InitialDockState.Float, false, true, 300, 400, 300, 400 --[[3:4]])  -- standard position, enabled when Studio opens, if the widget goes back to the last position when opened again, standard horizontal size, standard vertical size, minimum horizontal size, minimum vertical size.
+local widget = plugin:CreateDockWidgetPluginGui("QE0", widget_info)
 widget.Name = 'QuickEdit'
 widget.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 widget.Enabled = false
@@ -41,6 +42,7 @@ local la
 local rthread : thread?
 
 local conn
+local tbrid
 conn = mouse.Button1Down:Connect(function()
 	if on and lt ~= nil and typeof(lt) == 'Instance' and lt:IsA('BasePart') then
 		on = false
@@ -53,7 +55,16 @@ conn = mouse.Button1Down:Connect(function()
 		widget.Enabled = true
 		app.edit.input.m.Text = l.Text
 		repeat task.wait() until not widget.Enabled
-		l.Text = app.edit.input.m.Text
+
+		if l.Text ~= app.edit.input.m.Text then
+			tbrid = chs:TryBeginRecording('qe0-edit', "QuickEdit TextLabel")
+
+			l.Text = app.edit.input.m.Text
+
+			if typeof(tbrid) == 'string' then
+				chs:FinishRecording(tbrid, Enum.FinishRecordingOperation.Commit)
+			end
+		end
 	end
 end)
 

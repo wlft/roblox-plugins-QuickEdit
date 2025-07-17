@@ -1,3 +1,14 @@
+# v0.1.0
+
+## Features
+
+* QuickEdit functionality supports Undo/Redo via ChangeHistoryService
+
+## Fixes
+
+* Contains minor non-breaking fixes
+
+
 # v0.0.2
 
 ## Fixes
