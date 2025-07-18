@@ -1,1 +1,1 @@
-# QuickEdit (v0.0.3)
+# QuickEdit (v0.1.0)
